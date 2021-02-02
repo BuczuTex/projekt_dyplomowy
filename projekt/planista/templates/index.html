@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Planista - strona główna{% endblock %}
+{% block content %} <!-- Aplikacja "Planista", "O nas", "Popularne firmy -->
+<script>
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (currentScrollPos < 65) {
+        document.getElementById("head").style.top = "0";
+        document.getElementById("navigation").style.top = "65px";
+    } else {
+        document.getElementById("head").style.top = "-50px";
+        document.getElementById("navigation").style.top = "0";
+    }
+    prevScrollpos = currentScrollPos;
+}
+</script>
+    <div class="wrapper">
+        <div class="fixed one"></div>
+        <div class="scroll one1">
+            <h2>O aplikacji Planista</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus lobortis turpis a ultricies. Aliquam non enim ut velit mattis ullamcorper a hendrerit purus. In tincidunt placerat libero, quis suscipit libero ornare aliquet. Donec aliquam pellentesque molestie. Praesent rhoncus lorem vitae vestibulum hendrerit. Donec condimentum sed est at faucibus. In. </h3>
+        </div>
+        <div class="fixed two"></div>
+        <div class="scroll two2">
+            <h2>O nas</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus lobortis turpis a ultricies. Aliquam non enim ut velit mattis ullamcorper a hendrerit purus. In tincidunt placerat libero, quis suscipit libero ornare aliquet. Donec aliquam pellentesque molestie. Praesent rhoncus lorem vitae vestibulum hendrerit. Donec condimentum sed est at faucibus. In. </h3>
+        </div>
+        <div class="fixed three"></div>
+        <div class="scroll">
+            <h2>Popularne firmy</h2>
+            <!-- Zrobić tutaj karuzelę z firmami -->
+        </div>
+    </div>
+{% endblock %}

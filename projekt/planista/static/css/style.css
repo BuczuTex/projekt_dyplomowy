@@ -1,0 +1,94 @@
+header {
+    background-color: #6666ff;
+    height:70px;
+}
+.head_anchor {
+    font-size: 60px;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+.head_anchor:hover {
+    color: gold;
+}
+a:link {
+    text-decoration: none;
+}
+.center {
+    text-align: center;
+}
+nav a {
+    color: white;
+    display: block;
+    width: 33.33%;
+    background-color: #66b3ff;
+    font-size: 30px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    transition: top 0.3s;
+}
+nav a:hover {
+    background-color: gold;
+}
+.index .center {
+    text-align:center;
+}
+h2 {
+    text-align: center;
+}
+body, html {
+    height: 100%;
+}
+.image {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.one {
+    background-image: url('../images/1.jpg');
+}
+.two {
+    background-image: url('../images/2.jpg');
+}
+.three {
+    background-image: url('../images/3.jpg');
+}
+.wrapper {
+    height: 100%;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+}
+.fixed {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    color: #eeeeee;
+    text-align: center;
+    display: table;
+}
+.fixed h2{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.scroll {
+    padding: 10px 70px;
+}
+.one1 {
+    background-color: white;
+    color: black;
+}
+.two2 {
+    background-color: white;
+    color: black;
+}
